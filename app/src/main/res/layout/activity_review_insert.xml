@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ToolbarStyle"></android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="225"
+                    app:scale_base_width="1080">
+
+                    <TextView
+                        android:id="@+id/marketNameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="marketNameText"
+                        android:textColor="#000000"
+                        app:scale_height="90"
+                        app:scale_left="15"
+                        app:scale_textsize="70"
+                        app:scale_top="20"
+                        app:scale_width="850" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="평점"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        app:scale_height="85"
+                        app:scale_left="24"
+                        app:scale_textsize="65"
+                        app:scale_top="135"
+                        app:scale_width="150" />
+
+                    <ImageView
+                        android:id="@+id/scoreImage1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:onClick="OnClicked"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nullstar"
+                        app:scale_height="85"
+                        app:scale_left="150"
+                        app:scale_textsize="55"
+                        app:scale_top="130"
+                        app:scale_width="85" />
+
+                    <ImageView
+                        android:id="@+id/scoreImage2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:onClick="OnClicked"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nullstar"
+                        app:scale_height="85"
+                        app:scale_left="235"
+                        app:scale_textsize="55"
+                        app:scale_top="130"
+                        app:scale_width="85" />
+
+                    <ImageView
+                        android:id="@+id/scoreImage3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:onClick="OnClicked"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nullstar"
+                        app:scale_height="85"
+                        app:scale_left="320"
+                        app:scale_textsize="55"
+                        app:scale_top="130"
+                        app:scale_width="85" />
+
+                    <ImageView
+                        android:id="@+id/scoreImage4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:onClick="OnClicked"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nullstar"
+                        app:scale_height="85"
+                        app:scale_left="405"
+                        app:scale_textsize="55"
+                        app:scale_top="130"
+                        app:scale_width="85" />
+
+                    <ImageView
+                        android:id="@+id/scoreImage5"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:onClick="OnClicked"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nullstar"
+                        app:scale_height="85"
+                        app:scale_left="490"
+                        app:scale_textsize="55"
+                        app:scale_top="130"
+                        app:scale_width="85" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+
+                <EditText
+                    android:id="@+id/reviewText"
+                    android:layout_width="345dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/border"
+                    android:gravity="start"
+                    android:hint="솔직하고 정직한 의견을 달아주세요~\n악플은 자제부탁드립니다. ^o^"
+                    android:lines="8"
+                    android:maxLength="80"
+                    android:maxLines="10"
+                    android:onClick="OnClicked"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:text=""
+                    android:textColor="#000000" />
+
+                <com.ssomai.android.scalablelayout.ScalableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:scale_base_height="700"
+                    app:scale_base_width="1080">
+
+                    <TextView
+                        android:id="@+id/lengthText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="lengthText"
+                        app:scale_height="60"
+                        app:scale_left="30"
+                        app:scale_textsize="45"
+                        app:scale_top="0"
+                        app:scale_width="1020" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="200dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:onClick="OnClicked"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nullimage"
+                        app:scale_height="350"
+                        app:scale_left="0"
+                        app:scale_textsize="45"
+                        app:scale_top="-90"
+                        app:scale_width="400" />
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/okButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:onClick="OnClicked"
+                        android:text="작성완료"
+                        android:textColor="#ffffff"
+                        android:textSize="18dp"
+                        app:scale_height="150"
+                        app:scale_left="300"
+                        app:scale_textsize="45"
+                        app:scale_top="500"
+                        app:scale_width="480" />
+                </com.ssomai.android.scalablelayout.ScalableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
